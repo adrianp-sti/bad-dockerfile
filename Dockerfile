@@ -3,7 +3,7 @@ MAINTAINER adrianp@stindustries.net
 
 # Prep environment
 #
-RUN yum -y install deltarpm && yum -y update
+RUN yum -y install deltarpm 
 
 # Install build utils
 #
