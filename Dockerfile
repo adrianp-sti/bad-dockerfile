@@ -3,12 +3,11 @@ MAINTAINER adrianp@stindustries.net
 
 # Prep environment
 #
-RUN yum -y install deltarpm 
+RUN yum -y install deltarpm && yum -y update
 
 # Install build utils
 #
-RUN yum -y install bison gnutls-devel gcc libidn-devel gcc-c++ bzip2 && \
-    yum clean all
+RUN yum -y install bison gnutls-devel gcc libidn-devel gcc-c++ bzip2
 
 # wget - command line utility (installed via. RPM)
 #
